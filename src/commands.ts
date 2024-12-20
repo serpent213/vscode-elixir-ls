@@ -4,6 +4,8 @@ import { configureExpandMacro } from "./commands/expandMacro";
 import { configureManipulatePipes } from "./commands/manipulatePipes";
 import { configureMixClean } from "./commands/mixClean";
 import { configureRestart } from "./commands/restart";
+import { configureRpcCall } from "./commands/rpcCall";
+import { configureTestRpc } from "./commands/testRpc";
 import type { LanguageClientManager } from "./languageClientManager";
 
 export function configureCommands(
@@ -17,4 +19,6 @@ export function configureCommands(
   configureMixClean(context, languageClientManager, true);
   configureManipulatePipes(context, languageClientManager, "fromPipe");
   configureManipulatePipes(context, languageClientManager, "toPipe");
+  configureRpcCall(context, languageClientManager);
+  configureTestRpc(context, languageClientManager);
 }

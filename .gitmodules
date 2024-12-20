@@ -1,4 +1,4 @@
 [submodule "elixir-ls"]
 	path = elixir-ls
-	url = https://github.com/elixir-lsp/elixir-ls
+	url = git@github.com:serpent213/elixir-ls.git
 	branch = master

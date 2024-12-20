@@ -528,6 +528,16 @@
         "category": "Elixir",
         "command": "extension.fromPipe",
         "title": "Transform pipe operator to function call"
+      },
+      {
+        "category": "Elixir",
+        "command": "extension.rpcCall",
+        "title": "RPC call"
+      },
+      {
+        "category": "Elixir",
+        "command": "extension.testRpc",
+        "title": "Test RPC"
       }
     ],
     "menus": {
@@ -566,6 +576,11 @@
           "category": "Elixir",
           "command": "extension.fromPipe",
           "when": "editorLangId == elixir || editorLangId == eex || editorLangId == html-eex"
+        },
+        {
+          "category": "Elixir",
+          "command": "extension.rpcCall",
+          "when": "true"
         }
       ]
     },
